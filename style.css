@@ -1,0 +1,6 @@
+/* setup  font and background color of all element */
+body {
+  font-family: "Poppins";
+  margin: 0;
+  background-color: #e5e5e5;
+}
