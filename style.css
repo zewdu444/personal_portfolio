@@ -4,3 +4,12 @@ body {
   margin: 0;
   background-color: #e5e5e5;
 }
+/* centering all elements */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 718px;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
