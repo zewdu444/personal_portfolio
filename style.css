@@ -55,3 +55,17 @@ body {
   margin-left: 4px;
   margin-right: 4px;
 }
+/* implement hover and active for bar menu */
+.toolbar > a:hover {
+  color: #0d1b97;
+}
+.toolbar > a:active {
+  color: #ef1065;
+}
+/* implement hover and active for button_group */
+.button_group > a:hover {
+  color: #6070ff;
+}
+.button_group > a:active {
+  color: #ef1065;
+}
