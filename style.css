@@ -9,8 +9,18 @@ body {
   display: flex;
   flex-direction: column;
   height: 718px;
-  max-width: 540px;
+  max-width: 375px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
   background-image: url(images/header-shapes_mobile.jpg);
+}
+/* header toolbar */
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 30px;
+  color: #6070ff;
 }
