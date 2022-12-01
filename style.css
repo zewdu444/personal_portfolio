@@ -1,9 +1,10 @@
 /* setup  font and background color of all element */
 body {
-  font-family: "Poppins";
+  font-family: Poppins, sans-serif;
   margin: 0;
   background-color: #e5e5e5;
 }
+
 /* centering all elements */
 .container {
   display: flex;
@@ -14,8 +15,9 @@ body {
   margin-right: auto;
   padding-left: 24px;
   padding-right: 24px;
-  background-image: url(images/header-shapes_mobile.jpg);
+  background-image: url("images/header-shapes_mobile.jpg");
 }
+
 /* header toolbar */
 .toolbar,
 .toolbar > button {
@@ -31,46 +33,55 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 /* size and color for title */
 .title {
   font-size: 40px;
   color: #172b4d;
   font-weight: 700;
 }
+
 /* size and color for detail content */
 .detail {
   font-size: 16px;
   color: #344563;
   font-weight: 400;
 }
+
 /* size and color for connect text */
 .connect {
   font-size: 16px;
   color: #7f8cff;
   font-weight: 400;
 }
+
 /* social media button group style */
 .button_group > a {
   color: #505f79;
   margin-left: 4px;
   margin-right: 4px;
 }
-/* implement hover and active for  menu bar*/
+
+/* implement hover and active for  menu bar */
 .toolbar > button:hover {
   color: #0d1b97;
 }
+
 .toolbar > button:active {
   color: #ef1065;
 }
+
 /* implement hover and active for button_group */
 .button_group > a:hover {
   color: #6070ff;
 }
+
 .button_group > a:active {
   color: #ef1065;
 }
+
 /* adjust button border and background */
-.toolbar > button {
+.btn {
   background-color: transparent;
   border: none;
 }
