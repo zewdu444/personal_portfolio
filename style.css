@@ -2,7 +2,6 @@
 body {
   font-family: Poppins, sans-serif;
   margin: 0;
-  background-color: #e5e5e5;
 }
 
 /* centering all elements */
@@ -10,12 +9,14 @@ body {
   display: flex;
   flex-direction: column;
   height: 718px;
-  max-width: 375px;
+  max-width: 350px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 24px;
   padding-right: 24px;
   background-image: url("images/header-shapes_mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 10px;
 }
 
 /* header toolbar */
@@ -24,7 +25,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-right: 30px;
+  margin-right: 10px;
+  margin-top: 5px;
   color: #6070ff;
 }
 
@@ -56,10 +58,20 @@ body {
 }
 
 /* social media button group style */
-.button_group > a {
+.buttongroup > a {
   color: #505f79;
   margin-left: 4px;
   margin-right: 4px;
+}
+
+/* my logo style */
+
+.toolbar > a {
+  color: #6070ff;
+  font-size: 18px;
+  text-decoration: none;
+  margin-top: 5px;
+  font-weight: bold;
 }
 
 /* implement hover and active for  menu bar */
@@ -72,11 +84,11 @@ body {
 }
 
 /* implement hover and active for button_group */
-.button_group > a:hover {
+.buttongroup > a:hover {
   color: #6070ff;
 }
 
-.button_group > a:active {
+.buttongroup > a:active {
   color: #ef1065;
 }
 
@@ -84,14 +96,6 @@ body {
 .btn {
   background-color: transparent;
   border: none;
-}
-
-/* my logo style */
-
-.toolbar > a {
-  color: #6070ff;
-  font-size: 18px;
-  text-decoration: none;
 }
 
 /* My logo hover and active  */
