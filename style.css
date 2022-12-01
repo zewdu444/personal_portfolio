@@ -24,3 +24,8 @@ body {
   margin-right: 30px;
   color: #6070ff;
 }
+/* content section */
+.content {
+  display: flex;
+  flex-direction: column;
+}
