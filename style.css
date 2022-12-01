@@ -85,3 +85,21 @@ body {
   background-color: transparent;
   border: none;
 }
+
+/* my logo style */
+
+.toolbar > a {
+  color: #6070ff;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+/* My logo hover and active  */
+
+.toolbar > a:hover {
+  color: #040b48;
+}
+
+.toolbar > a:active {
+  color: #ef1065;
+}
