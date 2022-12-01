@@ -18,7 +18,7 @@ body {
 }
 /* header toolbar */
 .toolbar,
-.toolbar > a {
+.toolbar > button {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -55,11 +55,11 @@ body {
   margin-left: 4px;
   margin-right: 4px;
 }
-/* implement hover and active for bar menu */
-.toolbar > a:hover {
+/* implement hover and active for  menu bar*/
+.toolbar > button:hover {
   color: #0d1b97;
 }
-.toolbar > a:active {
+.toolbar > button:active {
   color: #ef1065;
 }
 /* implement hover and active for button_group */
@@ -68,4 +68,9 @@ body {
 }
 .button_group > a:active {
   color: #ef1065;
+}
+/* adjust button border and background */
+.toolbar > button {
+  background-color: transparent;
+  border: none;
 }
