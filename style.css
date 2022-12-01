@@ -1,0 +1,127 @@
+/* setup  font and background color of all element */
+body {
+  font-family: Poppins, sans-serif;
+  margin: 0;
+}
+
+/* centering all elements */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 718px;
+  max-width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-image: url("images/header-shapes_mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: 10px;
+}
+
+/* header toolbar */
+.toolbar,
+.toolbar > nav > button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+  margin-top: 5px;
+  color: #6070ff;
+}
+
+/* content section */
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* size and color for title */
+.title {
+  font-size: 40px;
+  color: #172b4d;
+  font-weight: 700;
+}
+
+/* size and color for detail content */
+.detail {
+  font-size: 16px;
+  color: #344563;
+  font-weight: 400;
+}
+
+/* size and color for connect text */
+.connect {
+  font-size: 16px;
+  color: #7f8cff;
+  font-weight: 400;
+}
+
+/* my logo style */
+
+.toolbar > a {
+  color: #6070ff;
+  font-size: 18px;
+  text-decoration: none;
+  margin-top: 5px;
+  font-weight: bold;
+}
+
+/* social media button group style */
+
+ul.buttongroup > li > a {
+  color: #505f79;
+  margin-left: 4px;
+  margin-right: 4px;
+  list-style: none;
+}
+
+/* My logo hover and active  */
+
+.toolbar > a:hover {
+  color: #040b48;
+}
+
+.toolbar > a:active {
+  color: #ef1065;
+}
+
+/* implement hover and active for button_group */
+ul.buttongroup > li > a:hover {
+  color: #6070ff;
+}
+
+ul.buttongroup > li > a:active {
+  color: #ef1065;
+}
+
+/* implement hover and active for  menu bar */
+.toolbar > nav > button:hover {
+  color: #0d1b97;
+}
+
+.toolbar > nav > button:active {
+  color: #ef1065;
+}
+
+/* list item style */
+.buttongroup {
+  display: inline-flex;
+  list-style-type: none;
+  justify-content: start;
+  padding: 0;
+  margin: 0;
+}
+
+/* unorder list style */
+.buttongroup > li {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+/* adjust button border and background */
+.btn {
+  background-color: transparent;
+  border: none;
+}
