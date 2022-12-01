@@ -21,7 +21,7 @@ body {
 
 /* header toolbar */
 .toolbar,
-.toolbar > button {
+.toolbar > nav > button {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -57,13 +57,6 @@ body {
   font-weight: 400;
 }
 
-/* social media button group style */
-.buttongroup > a {
-  color: #505f79;
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
 /* my logo style */
 
 .toolbar > a {
@@ -74,28 +67,13 @@ body {
   font-weight: bold;
 }
 
-/* implement hover and active for  menu bar */
-.toolbar > button:hover {
-  color: #0d1b97;
-}
+/* social media button group style */
 
-.toolbar > button:active {
-  color: #ef1065;
-}
-
-/* implement hover and active for button_group */
-.buttongroup > a:hover {
-  color: #6070ff;
-}
-
-.buttongroup > a:active {
-  color: #ef1065;
-}
-
-/* adjust button border and background */
-.btn {
-  background-color: transparent;
-  border: none;
+ul.buttongroup > li > a {
+  color: #505f79;
+  margin-left: 4px;
+  margin-right: 4px;
+  list-style: none;
 }
 
 /* My logo hover and active  */
@@ -106,4 +84,44 @@ body {
 
 .toolbar > a:active {
   color: #ef1065;
+}
+
+/* implement hover and active for button_group */
+ul.buttongroup > li > a:hover {
+  color: #6070ff;
+}
+
+ul.buttongroup > li > a:active {
+  color: #ef1065;
+}
+
+/* implement hover and active for  menu bar */
+.toolbar > nav > button:hover {
+  color: #0d1b97;
+}
+
+.toolbar > nav > button:active {
+  color: #ef1065;
+}
+
+/* list item style */
+.buttongroup {
+  display: inline-flex;
+  list-style-type: none;
+  justify-content: start;
+  padding: 0;
+  margin: 0;
+}
+
+/* unorder list style */
+.buttongroup > li {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+/* adjust button border and background */
+.btn {
+  background-color: transparent;
+  border: none;
 }
