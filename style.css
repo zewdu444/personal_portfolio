@@ -17,13 +17,15 @@ body {
   background-image: url(images/header-shapes_mobile.jpg);
 }
 /* header toolbar */
-.toolbar {
+.toolbar,
+.toolbar > a {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-right: 30px;
   color: #6070ff;
 }
+
 /* content section */
 .content {
   display: flex;
@@ -46,4 +48,10 @@ body {
   font-size: 16px;
   color: #7f8cff;
   font-weight: 400;
+}
+/* social media button group style */
+.button_group > a {
+  color: #505f79;
+  margin-left: 4px;
+  margin-right: 4px;
 }
