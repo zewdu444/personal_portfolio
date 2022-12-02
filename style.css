@@ -10,11 +10,12 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   margin-left: auto;
   margin-right: auto;
   max-width: 375px;
   background-color: #f7f7f9;
+  row-gap: 0;
 }
 
 /* headline elements */
@@ -28,6 +29,7 @@ body {
   background-size: 100% auto;
   padding-left: 24px;
   padding-right: 24px;
+  margin-bottom: 75px;
 }
 
 /* header toolbar */
@@ -166,14 +168,14 @@ img {
   display: flex;
   flex-direction: column;
   background-color: white;
-  margin-top: 114px;
   margin-left: 24px;
   width: 327px;
-  height: 552px;
+  height: 540px;
   border-radius: 16px;
   border-style: solid;
   border-width: 1px;
   border-color: #dfe1e6;
+  margin-bottom: 75px;
 }
 
 /* project title properties */
