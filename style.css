@@ -4,16 +4,25 @@ body {
   margin: 0;
 }
 
-/* centering all elements */
+/* main styling grid */
+
 .container {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 3px 0;
   height: 718px;
   max-width: 350px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 24px;
   padding-right: 24px;
+}
+
+/* headline elements */
+.headline {
+  display: flex;
+  flex-direction: column;
   background-image: url("images/header-shapes_mobile.jpg");
   background-repeat: no-repeat;
   background-position: 10px;
