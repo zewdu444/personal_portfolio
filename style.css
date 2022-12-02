@@ -271,6 +271,15 @@ ul.tags > li {
   background-color: #fff;
 }
 
+/* implement works card button hover and active */
+.projectbutton:hover {
+  color: #040b48;
+}
+
+.projectbutton:active {
+  color: #ef1065;
+}
+
 /* Style about me */
 .aboutme {
   display: flex;
