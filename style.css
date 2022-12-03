@@ -285,3 +285,17 @@ ul.tags > li {
   display: flex;
   flex-direction: column;
 }
+
+/* about myself style */
+.aboutmyself {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 327px;
+  border-top-right-radius: 75px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  padding-right: 24px;
+  padding-left: 24px;
+}
