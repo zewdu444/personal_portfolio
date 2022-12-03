@@ -360,7 +360,8 @@ ul.tags > li {
 }
 
 ul.techstack > li {
-  margin-bottom: 32px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* language style */
@@ -402,7 +403,7 @@ ul.techstack > li.langdetail {
   color: #253858;
   font-size: 15px;
   margin-top: 10px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 /* Style tech stack images */
@@ -418,4 +419,12 @@ ul.techstack > li.langdetail {
 .langgap {
   margin-top: 24px;
   margin-left: 16px;
+}
+
+/* style hr element */
+hr {
+  margin: 0;
+  padding: 0;
+  border: 1px solid #dfe1e6;
+  margin-bottom: 6px;
 }
