@@ -24,7 +24,7 @@ After you're finished please remove all the comments and instructions!
 
 <div align="center">
 
-  <h3><b>Personal Portfolio page</b></h3>
+  <h3><b>Mobile first Personal Portfolio page</b></h3>
 
 </div>
 
@@ -55,7 +55,7 @@ HTML5 and CSS in addition it used figma ui template</a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> HTML 5 and CSS flex box.
+> HTML 5 , CSS flex box and CSS grid.
 
 <!-- Features -->
 
@@ -66,6 +66,7 @@ HTML5 and CSS in addition it used figma ui template</a>
 - mobile first
 - flex box
 - interactive button
+- CSS grid
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,7 +94,7 @@ Clone this repository to your desired folder:
 
 👤 **zewdu erkyhun**
 
-- GitHub: [@zewdu444](hhttps://github.com/zewdu444)
+- GitHub: [@zewdu444](https://github.com/zewdu444)
 - Twitter: [@zewdu444](https://twitter.com/zewdu444)
 - LinkedIn: [zewdu-erkyhun](https://www.linkedin.com/in/zewdu-erkyhun-081378b3/)
 
