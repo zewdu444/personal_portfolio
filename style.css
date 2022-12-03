@@ -340,3 +340,12 @@ ul.tags > li {
   background-color: #fff;
   text-align: center;
 }
+
+/* implement about resume me button hover and active */
+.aboutresumebutton:hover {
+  color: #040b48;
+}
+
+.aboutresumebutton:active {
+  color: #ef1065;
+}
