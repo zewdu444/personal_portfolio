@@ -165,8 +165,7 @@ img {
 /* Style card Properties */
 
 .workscard {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   background-color: white;
   margin-left: 24px;
   width: 327px;
