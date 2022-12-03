@@ -299,3 +299,44 @@ ul.tags > li {
   padding-right: 24px;
   padding-left: 24px;
 }
+
+/* style about myself title */
+
+.abouttitle {
+  margin-top: 114px;
+  font-size: 40px;
+  line-height: 52px;
+  font-style: bold;
+  color: #172b4d;
+  font-weight: 700;
+  width: 200px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* style about myself detail */
+.aboutdetail {
+  font-size: 16px;
+  line-height: 24px;
+  width: 300px;
+  color: #344563;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* about myself resume button style */
+
+.aboutresumebutton {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 12px;
+  font-size: 17px;
+  font-weight: 500;
+  width: 150px;
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #6070ff;
+  color: #396df2;
+  background-color: #fff;
+  text-align: center;
+}
