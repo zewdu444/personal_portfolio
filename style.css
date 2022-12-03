@@ -393,10 +393,29 @@ ul.techstack > li {
 
 /* style about myself programming language  */
 ul.techstack > li.langdetail {
+  display: flex;
+  justify-self: start;
+  flex-direction: row;
   background-color: #f7f7f9;
   height: 66.72px;
   border-radius: 8px;
   color: #253858;
   font-size: 15px;
-  line-height: 66.72px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+/* Style tech stack images */
+
+.techimage {
+  width: 48px;
+  height: 48px;
+  margin-top: 10px;
+  margin-left: 16px;
+}
+
+/* image and language gap style */
+.langgap {
+  margin-top: 24px;
+  margin-left: 16px;
 }
