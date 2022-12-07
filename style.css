@@ -43,8 +43,6 @@ body {
 
 @media (min-width: 768px) {
   .headline {
-    display: flex;
-    flex-direction: row;
     background-image: url("images/desktop_header_one.png");
     background-repeat: no-repeat;
     height: 916px;
@@ -52,18 +50,81 @@ body {
     background-position-y: top 118px;
     margin-bottom: 142px;
     border-bottom-left-radius: 100px;
+    padding-top: 0;
   }
 }
 
 /* header toolbar */
-.toolbar,
+.toolbar > nav,
 .toolbar > nav > button {
   display: flex;
   align-items: center;
+  flex-direction: row;
   justify-content: space-between;
   margin-right: 10px;
-  margin-top: 5px;
   color: #6070ff;
+}
+
+/* toolar mobile view version for 768px and below */
+
+@media (max-width: 768px) {
+  .desktopmenu {
+    display: none;
+  }
+}
+
+/* toolbar  desktop version applied for 768px and above */
+@media (min-width: 768px) {
+  .toolbar > nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 0;
+  }
+
+  /* hide menu bar */
+  .mobilemenu,
+  .mobilemenu > i {
+    display: none;
+  }
+
+  /* styling my logo  */
+  .toolbar > nav > a {
+    padding-left: 155px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  /* desktop menu position */
+  .desktopmenu {
+    margin-right: 100px;
+    padding-top: 20px;
+  }
+
+  /* desktop menu list item style */
+  ul.desktopmenu > li {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    margin-left: 32px;
+  }
+
+  ul.desktopmenu > li > a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  /* implementing hover and active for desktop menu */
+  ul.desktopmenu > li > a:hover {
+    color: #0b1ec9;
+  }
+
+  ul.desktopmenu > li > a:active {
+    color: #ef1065;
+  }
 }
 
 /* content section */
@@ -95,11 +156,10 @@ body {
 
 /* my logo style */
 
-.toolbar > a {
+.toolbar > nav > a {
   color: #6070ff;
   font-size: 18px;
   text-decoration: none;
-  margin-top: 5px;
   font-weight: bold;
 }
 
@@ -126,11 +186,11 @@ ul.tags > li > button {
 
 /* My logo hover and active  */
 
-.toolbar > a:hover {
+.toolbar > nav > a:hover {
   color: #040b48;
 }
 
-.toolbar > a:active {
+.toolbar > nav > a:active {
   color: #ef1065;
 }
 
@@ -219,7 +279,7 @@ img {
   margin-bottom: 0;
 }
 
-/* clinet list item properties */
+/* client list item properties */
 ul.client > li {
   list-style: none;
   display: flex;
