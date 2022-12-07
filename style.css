@@ -18,6 +18,13 @@ body {
   row-gap: 0;
 }
 
+/* container desktop version applied 768px and above */
+@media (min-width: 768px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
 /* headline elements */
 .headline {
   display: flex;
@@ -30,6 +37,22 @@ body {
   padding-left: 24px;
   padding-right: 24px;
   margin-bottom: 75px;
+}
+
+/* headline  desktop version applied for 768px and above */
+
+@media (min-width: 768px) {
+  .headline {
+    display: flex;
+    flex-direction: row;
+    background-image: url("images/desktop_header_one.png");
+    background-repeat: no-repeat;
+    height: 916px;
+    background-color: white;
+    background-position-y: top 118px;
+    margin-bottom: 142px;
+    border-bottom-left-radius: 100px;
+  }
 }
 
 /* header toolbar */
@@ -146,7 +169,7 @@ ul.buttongroup > li > a:active {
 }
 
 /* adjust button border and background */
-.btn {
+.mobilemenu {
   background-color: transparent;
   border: none;
 }
