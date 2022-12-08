@@ -36,7 +36,6 @@ body {
   background-size: 100% auto;
   padding-left: 24px;
   padding-right: 24px;
-  margin-bottom: 75px;
 }
 
 /* headline  desktop version applied for 768px and above */
@@ -69,6 +68,40 @@ body {
 
 @media (max-width: 768px) {
   .desktopmenu {
+    display: none;
+  }
+
+  .desktoppic {
+    display: none;
+  }
+
+  /* card two desktop version */
+  .workscard:nth-of-type(n + 2) > section > ul.client > li.type:nth-of-type(2) {
+    display: none;
+  }
+
+  /* hide Full stack dev */
+  .workscard:nth-of-type(n + 2) > section > ul.client > li:nth-of-type(4) {
+    display: none;
+  }
+
+  /* hide desktop detail */
+  .workscard:nth-of-type(n + 2) > section > p:nth-of-type(2) {
+    display: none;
+  }
+
+  /* hide desktop tags */
+  .workscard:nth-of-type(n + 2) > section > ul.tags > li:nth-of-type(2) {
+    display: none;
+  }
+
+  /* hide desktop title */
+  .workscard:nth-of-type(n + 2) > section > h2:nth-of-type(2) {
+    display: none;
+  }
+
+  /* hide desktop year for card four */
+  .workscard:nth-of-type(4) > section > ul.client > li:nth-of-type(6) {
     display: none;
   }
 }
@@ -383,6 +416,107 @@ ul.tags > li {
 
 .projectbutton:active {
   color: #ef1065;
+}
+
+/* works card section desktop version for 768px and above  */
+@media (min-width: 768px) {
+  .workscard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1156px;
+    height: 496px;
+    border-radius: 24px;
+    border-style: solid;
+    margin-bottom: 75px;
+  }
+
+  img {
+    width: 544px;
+    height: 448px;
+    border-radius: 8px;
+    margin: 24px;
+  }
+
+  .subsection {
+    margin-top: 30px;
+    margin-left: 25px;
+  }
+
+  .projecttitle {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    margin-bottom: 20px;
+  }
+
+  /* client list item properties */
+  ul.client > li {
+    font-size: 18px;
+    margin-right: 12px;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+  }
+
+  /* styling tags */
+  ul.tags {
+    margin-right: 200px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  /* ordering works card  element */
+  .workscard:nth-child(odd) > img {
+    order: 2;
+  }
+
+  /* hide mobile pitures on desktop */
+  .mobilepic {
+    display: none;
+  }
+
+  /* hide canopy */
+  .workscard:nth-of-type(n + 2) > section > ul.client > li.type:nth-of-type(1) {
+    display: none;
+  }
+
+  /* hide back end */
+  .workscard:nth-of-type(n + 2) > section > ul.client > li:nth-of-type(3) {
+    display: none;
+  }
+
+  /* hide detail of posts */
+  .workscard:nth-of-type(n + 2) > section > p:nth-of-type(1) {
+    display: none;
+  }
+
+  /* hide project title for starting from 3 */
+  .workscard:nth-of-type(n + 2) > section > h2:nth-of-type(1) {
+    display: none;
+  }
+
+  /* hide mobie year of cardfour */
+  .workscard:nth-of-type(4) > section > ul.client > li:nth-of-type(5) {
+    display: none;
+  }
+
+  /* button color for card three  */
+
+  .workscard:nth-of-type(2) > section > .projectbutton {
+    background-color: #4053fc;
+    color: white;
+  }
+
+  /* implement works card button hover and active */
+  .workscard:nth-of-type(2) > section > .projectbutton:hover {
+    color: #040b48;
+  }
+
+  .workscard:nth-of-type(2) > section > .projectbutton:active {
+    color: #ef1065;
+  }
 }
 
 /* Style about me */
