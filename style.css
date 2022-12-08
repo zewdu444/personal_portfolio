@@ -47,7 +47,7 @@ body {
     background-repeat: no-repeat;
     height: 916px;
     background-color: white;
-    background-position-y: top 118px;
+    background-position-y: 118px;
     margin-bottom: 142px;
     border-bottom-left-radius: 100px;
     padding-top: 0;
@@ -131,6 +131,29 @@ body {
 .content {
   display: flex;
   flex-direction: column;
+}
+
+/* contect section desktop version for 768px and above */
+@media (min-width: 768px) {
+  .content {
+    margin-top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title {
+    font-size: 48px;
+    color: #091e42;
+    font-style: bold;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .detail {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+  }
 }
 
 /* size and color for title */
