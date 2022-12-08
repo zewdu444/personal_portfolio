@@ -599,6 +599,14 @@ ul.tags > li {
   padding-left: 12px;
 }
 
+.techstacklang {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-top: 12px;
+  padding-left: 0;
+}
+
 ul.techstack > li {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -633,7 +641,7 @@ ul.techstack > li {
 }
 
 /* style about myself programming language  */
-ul.techstack > li.langdetail {
+ul.techstacklang > li.langdetail {
   display: flex;
   justify-self: start;
   flex-direction: row;
@@ -667,6 +675,104 @@ hr {
   padding: 0;
   border: 1px solid #dfe1e6;
   margin-bottom: 6px;
+}
+
+/* About Myself section desktop version for 768px and above  */
+@media (min-width: 768px) {
+  .aboutmyself {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    width: 1390px;
+    border-top-right-radius: 75px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    height: 924px;
+  }
+
+  /* column one style */
+  .aboutcol1 {
+    align-items: center;
+    padding-left: 130px;
+  }
+
+  /* icons marign */
+  .abouticonsection {
+    margin-bottom: 10px;
+  }
+
+  /* column two style */
+  .aboutcol2 {
+    align-items: center;
+  }
+
+  /* detail style */
+  .aboutdetail {
+    width: 400px;
+  }
+
+  /* direction icon position */
+  .langicon {
+    padding-left: 340px;
+  }
+
+  /* icons postion  */
+
+  .techstack {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin-top: 130px;
+    padding-left: 0;
+    margin-right: 0;
+  }
+
+  .techstacklang {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-top: 12px;
+    padding-left: 0;
+    margin-right: 0;
+  }
+
+  ul.techstacklang > li.langdetail {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    width: 122px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    padding-right: 0;
+  }
+
+  /* programming language gaps */
+  .langgap {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+
+  /* margin for language detail */
+  .aboutlanguage {
+    margin-left: 18px;
+  }
+
+  /* framework icon position */
+  .frameicon {
+    padding-left: 330px;
+  }
+
+  /* skll icon positon */
+  .skillicon {
+    padding-left: 390px;
+  }
+
+  hr {
+    width: 500px;
+  }
 }
 
 /* contact form styling  */
