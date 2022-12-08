@@ -104,6 +104,11 @@ body {
   .workscard:nth-of-type(4) > section > ul.client > li:nth-of-type(6) {
     display: none;
   }
+
+  /* hide contact name  */
+  .contactname:nth-of-type(2) {
+    display: none;
+  }
 }
 
 /* toolbar  desktop version applied for 768px and above */
@@ -882,4 +887,50 @@ footer {
 
 .contactsubmit:active {
   color: #ef1065;
+}
+
+/* Contact me section desktop version for 768px and above  */
+@media (min-width: 768px) {
+  footer {
+    width: 100%;
+    max-width: 1440px;
+    height: 846px;
+    background: url("images/desktop_footer.png") right top no-repeat;
+    background-size: 85% 95%, 100%;
+    background-color: #6070ff;
+    background-position-y: 140px;
+    border-top-left-radius: 150px;
+    margin-top: -300px;
+  }
+
+  .contactme {
+    margin-top: 150px;
+  }
+
+  /* contact detail style */
+  .contactdetail {
+    text-align: center;
+    width: 490px;
+    align-self: center;
+    align-content: center;
+  }
+
+  .footerform {
+    align-self: center;
+  }
+
+  .formgroup {
+    height: 550px;
+    width: 447px;
+    margin-top: 20px;
+    border: none;
+  }
+
+  .contactsubmit {
+    align-self: center;
+  }
+
+  .contactname:nth-of-type(1) {
+    display: none;
+  }
 }
