@@ -75,7 +75,8 @@ ul.tags > li {
   background-color: #ebebff;
   padding-top: 6px;
   animation-name: projectcolor;
-  animation-duration: 30s;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 
 /* unorder list style */
@@ -976,17 +977,29 @@ footer {
 
 /* scew animation */
 .projecttitle:hover {
-  transform: skewX(10deg);
+  transform: skewX(20deg);
 }
 
 /* color animiation */
 
 @keyframes projectcolor {
-  from {
+  0% {
     background-color: #ebebff;
   }
 
-  to {
-    background-color: #f0b7e8;
+  25% {
+    background-color: lightsalmon;
+  }
+
+  50%{
+    background-color: #ebebff;
+  }
+
+  75%{
+    background-color: lightsalmon;
+  }
+
+  100%{
+    background-color: #ebebff;
   }
 }
