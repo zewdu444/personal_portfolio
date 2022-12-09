@@ -74,6 +74,8 @@ ul.tags > li {
   padding-right: 12px;
   background-color: #ebebff;
   padding-top: 6px;
+  animation-name: projectcolor;
+  animation-duration: 30s;
 }
 
 /* unorder list style */
@@ -958,5 +960,33 @@ footer {
   /* hide contact name  */
   .contactname:nth-of-type(2) {
     display: block;
+  }
+}
+
+/* scaling animation */
+.title:hover {
+  transform: scale(0.86);
+}
+
+/* rotation animation */
+
+.connect:hover {
+  transform: rotate(5deg);
+}
+
+/* scew animation */
+.projecttitle:hover {
+  transform: skewX(10deg);
+}
+
+/* color animiation */
+
+@keyframes projectcolor {
+  from {
+    background-color: #ebebff;
+  }
+
+  to {
+    background-color: #f0b7e8;
   }
 }
