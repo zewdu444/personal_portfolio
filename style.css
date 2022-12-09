@@ -74,6 +74,9 @@ ul.tags > li {
   padding-right: 12px;
   background-color: #ebebff;
   padding-top: 6px;
+  animation-name: projectcolor;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 
 /* unorder list style */
@@ -958,5 +961,45 @@ footer {
   /* hide contact name  */
   .contactname:nth-of-type(2) {
     display: block;
+  }
+}
+
+/* scaling animation */
+.title:hover {
+  transform: scale(0.86);
+}
+
+/* rotation animation */
+
+.connect:hover {
+  transform: rotate(5deg);
+}
+
+/* scew animation */
+.projecttitle:hover {
+  transform: skewX(20deg);
+}
+
+/* color animiation */
+
+@keyframes projectcolor {
+  0% {
+    background-color: #ebebff;
+  }
+
+  25% {
+    background-color: lightsalmon;
+  }
+
+  50% {
+    background-color: #ebebff;
+  }
+
+  75% {
+    background-color: lightsalmon;
+  }
+
+  100% {
+    background-color: #ebebff;
   }
 }
