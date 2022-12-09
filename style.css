@@ -29,18 +29,110 @@ body {
   background-size: 100% auto;
   padding-left: 24px;
   padding-right: 24px;
-  margin-bottom: 75px;
 }
 
 /* header toolbar */
-.toolbar,
+.toolbar > nav,
 .toolbar > nav > button {
   display: flex;
   align-items: center;
+  flex-direction: row;
   justify-content: space-between;
   margin-right: 10px;
-  margin-top: 5px;
   color: #6070ff;
+}
+
+/* toolar mobile view version for 768px and below */
+
+.desktopmenu,
+.desktoppic {
+  display: none;
+}
+
+/* client list item properties */
+ul.client > li {
+  list-style: none;
+  display: flex;
+  margin-left: 0;
+  font-size: 13px;
+  margin-right: 12px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* tag style */
+ul.tags > li {
+  list-style: none;
+  display: flex;
+  color: #6070ff;
+  border: none;
+  border-radius: 8px;
+  font-size: 12px;
+  height: 24px;
+  margin-right: 8px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color: #ebebff;
+  padding-top: 6px;
+}
+
+/* unorder list style */
+ul.buttongroup > li {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+ul.techstack > li {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* input name and email style */
+.contactname,
+.contactemail {
+  height: 48px;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #cfd8dc;
+  padding-left: 10px;
+  margin-top: 20px;
+}
+
+/* card two desktop version */
+.workscard:nth-of-type(n + 2) > section > ul.client > li.type:nth-of-type(2) {
+  display: none;
+}
+
+/* hide Full stack dev */
+.workscard:nth-of-type(n + 2) > section > ul.client > li:nth-of-type(4) {
+  display: none;
+}
+
+/* hide desktop detail */
+.workscard:nth-of-type(n + 2) > section > p:nth-of-type(2) {
+  display: none;
+}
+
+/* hide desktop tags */
+.workscard:nth-of-type(n + 2) > section > ul.tags > li:nth-of-type(2) {
+  display: none;
+}
+
+/* hide desktop title */
+.workscard:nth-of-type(n + 2) > section > h2:nth-of-type(2) {
+  display: none;
+}
+
+/* hide desktop year for card four */
+.workscard:nth-of-type(4) > section > ul.client > li:nth-of-type(6) {
+  display: none;
+}
+
+/* hide contact name  */
+.contactname:nth-of-type(2) {
+  display: none;
 }
 
 /* content section */
@@ -72,11 +164,10 @@ body {
 
 /* my logo style */
 
-.toolbar > a {
+.toolbar > nav > a {
   color: #6070ff;
   font-size: 18px;
   text-decoration: none;
-  margin-top: 5px;
   font-weight: bold;
 }
 
@@ -89,25 +180,13 @@ ul.buttongroup > li > a {
   list-style: none;
 }
 
-/* button tag style */
-ul.tags > li > button {
-  padding: 4px, 12px;
-  color: #6070ff;
-  border: none;
-  border-radius: 8px;
-  font-size: 12px;
-  height: 24px;
-  padding-left: 12px;
-  padding-right: 12px;
-}
-
 /* My logo hover and active  */
 
-.toolbar > a:hover {
+.toolbar > nav > a:hover {
   color: #040b48;
 }
 
-.toolbar > a:active {
+.toolbar > nav > a:active {
   color: #ef1065;
 }
 
@@ -138,15 +217,8 @@ ul.buttongroup > li > a:active {
   margin: 0;
 }
 
-/* unorder list style */
-.buttongroup > li {
-  margin-top: 0;
-  margin-left: 0;
-  margin-right: 10px;
-}
-
 /* adjust button border and background */
-.btn {
+.mobilemenu {
   background-color: transparent;
   border: none;
 }
@@ -154,7 +226,7 @@ ul.buttongroup > li > a:active {
 /* Style image properies */
 img {
   width: 295px;
-  height: 220px;
+  height: 200px;
   border-radius: 8px;
   margin-top: 16px;
   margin-left: 16px;
@@ -196,17 +268,6 @@ img {
   margin-bottom: 0;
 }
 
-/* clinet list item properties */
-ul.client > li {
-  list-style: none;
-  display: flex;
-  margin-left: 0;
-  font-size: 13px;
-  margin-right: 12px;
-  margin-bottom: 0;
-  padding-bottom: 0;
-}
-
 /* Style type  */
 
 .type {
@@ -244,15 +305,6 @@ ul.client > li {
   margin-top: 12px;
   padding-left: 16px;
   margin-bottom: 0;
-}
-
-ul.tags > li {
-  list-style: none;
-  display: flex;
-  margin-left: 0;
-  margin-right: 8px;
-  margin-bottom: 0;
-  padding-bottom: 0;
 }
 
 .projectbutton {
@@ -359,9 +411,12 @@ ul.tags > li {
   padding-left: 12px;
 }
 
-ul.techstack > li {
-  margin-top: 20px;
-  margin-bottom: 20px;
+.techstacklang {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-top: 12px;
+  padding-left: 0;
 }
 
 /* language style */
@@ -393,7 +448,7 @@ ul.techstack > li {
 }
 
 /* style about myself programming language  */
-ul.techstack > li.langdetail {
+ul.techstacklang > li.langdetail {
   display: flex;
   justify-self: start;
   flex-direction: row;
@@ -434,7 +489,6 @@ hr {
 /* footer style */
 footer {
   width: 100%;
-  max-width: 375px;
   height: 770px;
   display: flex;
   flex-direction: column;
@@ -484,18 +538,6 @@ footer {
   border: none;
 }
 
-/* input name and email style */
-.contactname,
-.contactemail {
-  height: 48px;
-  border-radius: 8px;
-  background-color: #fff;
-  color: #000;
-  border: 1px solid #cfd8dc;
-  padding-left: 10px;
-  margin-top: 20px;
-}
-
 /* contact message style */
 .contactmessage {
   height: 170px;
@@ -536,4 +578,385 @@ footer {
 
 .contactsubmit:active {
   color: #ef1065;
+}
+
+/* container desktop version applied 768px and above */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 100%;
+    background-color: #f7f7f9;
+    margin: 0;
+  }
+
+  body {
+    background-color: #f7f7f9;
+  }
+
+  .headline {
+    background-image: url("images/desktop_header_one.png");
+    background-repeat: no-repeat;
+    height: 916px;
+    background-color: white;
+    background-position-y: 118px;
+    margin-bottom: 142px;
+    border-bottom-left-radius: 100px;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .toolbar > nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 0;
+  }
+
+  .toolbar {
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+
+  /* hide menu bar */
+  .mobilemenu,
+  .mobilemenu > i {
+    display: none;
+  }
+
+  /* styling my logo  */
+  .toolbar > nav > a {
+    padding-left: 50px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  /* desktop menu position */
+  .desktopmenu {
+    margin-right: 100px;
+    padding-top: 20px;
+  }
+
+  /* desktop menu list item style */
+  ul.desktopmenu > li {
+    list-style: none;
+    display: flex;
+    margin-left: 32px;
+  }
+
+  ul.desktopmenu > li > a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #344563;
+    align-items: flex-end;
+    align-self: flex-end;
+  }
+
+  /* implementing hover and active for desktop menu */
+  ul.desktopmenu > li > a:hover {
+    color: #0b1ec9;
+  }
+
+  ul.desktopmenu > li > a:active {
+    color: #ef1065;
+  }
+
+  .content {
+    margin-top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title {
+    font-size: 48px;
+    color: #091e42;
+    font-style: bold;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .detail {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+  }
+
+  .workscard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 496px;
+    border-radius: 24px;
+    border-style: solid;
+    margin-bottom: 75px;
+  }
+
+  img {
+    width: 80%;
+    height: 448px;
+    border-radius: 8px;
+    margin: 24px;
+  }
+
+  .subsection {
+    margin-top: 30px;
+    margin-left: 25px;
+  }
+
+  .projecttitle {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+    margin-bottom: 20px;
+  }
+
+  /* client list item properties */
+  ul.client > li {
+    font-size: 18px;
+    margin-right: 12px;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+  }
+
+  /* styling tags */
+  ul.tags {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+
+  /* ordering works card  element */
+  .workscard:nth-child(odd) > img {
+    order: 2;
+  }
+
+  /* hide mobile pitures on desktop */
+  .mobilepic {
+    display: none;
+  }
+
+  .desktoppic {
+    display: block;
+  }
+
+  /* hide canopy */
+  .workscard:nth-of-type(n + 2) > section > ul.client > li.type:nth-of-type(1) {
+    display: none;
+  }
+
+  /* hide back end */
+  .workscard:nth-of-type(n + 2) > section > ul.client > li:nth-of-type(3) {
+    display: none;
+  }
+
+  /* hide detail of posts */
+  .workscard:nth-of-type(n + 2) > section > p:nth-of-type(1) {
+    display: none;
+  }
+
+  /* hide project title for starting from 3 */
+  .workscard:nth-of-type(n + 2) > section > h2:nth-of-type(1) {
+    display: none;
+  }
+
+  /* hide mobie year of cardfour */
+  .workscard:nth-of-type(4) > section > ul.client > li:nth-of-type(5) {
+    display: none;
+  }
+
+  /* button color for card three  */
+
+  .workscard:nth-of-type(2) > section > .projectbutton {
+    background-color: #4053fc;
+    color: white;
+  }
+
+  /* implement works card button hover and active */
+  .workscard:nth-of-type(2) > section > .projectbutton:hover {
+    color: #040b48;
+  }
+
+  .workscard:nth-of-type(2) > section > .projectbutton:active {
+    color: #ef1065;
+  }
+
+  .aboutmyself {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    width: 96%;
+    border-top-right-radius: 75px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    height: 924px;
+  }
+
+  /* column one style */
+  .aboutcol1 {
+    align-items: center;
+    padding-left: 130px;
+  }
+
+  /* icons marign */
+  .abouticonsection {
+    margin-bottom: 10px;
+  }
+
+  /* column two style */
+  .aboutcol2 {
+    align-items: center;
+  }
+
+  /* detail style */
+  .aboutdetail {
+    width: 400px;
+  }
+
+  /* direction icon position */
+  .langicon {
+    padding-left: 340px;
+  }
+
+  /* icons postion  */
+
+  .techstack {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin-top: 130px;
+    padding-left: 0;
+    margin-right: 0;
+  }
+
+  .techstacklang {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-top: 12px;
+    padding-left: 0;
+    margin-right: 0;
+  }
+
+  ul.techstacklang > li.langdetail {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    width: 122px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    padding-right: 0;
+  }
+
+  /* programming language gaps */
+  .langgap {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+
+  /* margin for language detail */
+  .aboutlanguage {
+    margin-left: 18px;
+  }
+
+  /* framework icon position */
+  .frameicon {
+    padding-left: 330px;
+  }
+
+  /* skll icon positon */
+  .skillicon {
+    padding-left: 390px;
+  }
+
+  hr {
+    width: 500px;
+  }
+
+  .contactfooter {
+    width: 100%;
+    height: 900px;
+    background: url("images/desktop_footer.png") right top no-repeat;
+    background-size: 85% 95%, 100%;
+    background-color: #6070ff;
+    background-position-y: 140px;
+    border-top-left-radius: 150px;
+    margin-top: -300px;
+    margin-bottom: 0;
+  }
+
+  .contactme {
+    margin-top: 150px;
+  }
+
+  /* contact detail style */
+  .contactdetail {
+    text-align: center;
+    width: 490px;
+    align-self: center;
+    align-content: center;
+  }
+
+  .footerform {
+    align-self: center;
+  }
+
+  .formgroup {
+    height: 550px;
+    width: 447px;
+    margin-top: 20px;
+    border: none;
+  }
+
+  .contactsubmit {
+    align-self: center;
+  }
+
+  .contactname:nth-of-type(1) {
+    display: none;
+  }
+
+  /* switching elments  which are  in mobile view  display none */
+  .workscard:nth-of-type(n + 2) > section > ul.client > li.type:nth-of-type(2) {
+    display: block;
+  }
+
+  /* hide Full stack dev */
+  .workscard:nth-of-type(n + 2) > section > ul.client > li:nth-of-type(4) {
+    display: block;
+  }
+
+  /* hide desktop detail */
+  .workscard:nth-of-type(n + 2) > section > p:nth-of-type(2) {
+    display: block;
+  }
+
+  /* hide desktop tags */
+  .workscard:nth-of-type(n + 2) > section > ul.tags > li:nth-of-type(2) {
+    display: block;
+  }
+
+  /* hide desktop title */
+  .workscard:nth-of-type(n + 2) > section > h2:nth-of-type(2) {
+    display: block;
+  }
+
+  /* hide desktop year for card four */
+  .workscard:nth-of-type(4) > section > ul.client > li:nth-of-type(6) {
+    display: block;
+  }
+
+  /* hide contact name  */
+  .contactname:nth-of-type(2) {
+    display: block;
+  }
 }
