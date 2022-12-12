@@ -33,7 +33,7 @@ After you're finished please remove all the comments and instructions!
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
-  - [:camera: project screenshot]("screen-shoot")
+  - [:camera: project screenshot]("#screen-shoot")
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
@@ -102,7 +102,7 @@ In order to run this project you only need:
 
 ### Setup
 
-> git clone https://github.com/zewdu444/personal_portfolio.git
+> <p> git clone https://github.com/zewdu444/personal_portfolio.git </p>
 > cd personal_portfolio
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
