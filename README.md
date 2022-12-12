@@ -33,6 +33,7 @@ After you're finished please remove all the comments and instructions!
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
+  - [:camera: project screenshot]("screen-shoot")
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
@@ -50,10 +51,12 @@ After you're finished please remove all the comments and instructions!
 
 > This project is a website for a personal portfolio that complies with responsive web design guidelines to display on desktop and mobile screens.
 
-<img
-src ="./images/desktop_screen.png"
+## :camera: Project screenshots <a name="screen-shoot"></a>
 
-> <img src ="./images/mobile_screen.png">
+<h5>Desktop version</h5>
+<img src ="./images/desktop_screen.png" width='100%'>
+<h5>Mobile version</h5>
+<hr> <img src ="./images/mobile_screen.png" width='100%'>
 
 ## 🛠 Built With <a name="built-with">
 
