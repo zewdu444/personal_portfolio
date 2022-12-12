@@ -33,9 +33,11 @@ After you're finished please remove all the comments and instructions!
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
+  - [:camera: project screenshot](#screen-shoot)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -47,7 +49,14 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 Personal portfolio page <a name="about-project"></a>
 
-> this project displayed a personal portfolio page optimized for mobile
+> This project is a website for a personal portfolio that complies with responsive web design guidelines to display on desktop and mobile screens.
+
+## :camera: Project screenshots <a name="screen-shoot"></a>
+
+<h5>Desktop version</h5>
+<img src ="./images/desktop_screen.png" width='100%'>
+<h5>Mobile version</h5>
+<hr> <img src ="./images/mobile_screen.png" width='100%'>
 
 ## 🛠 Built With <a name="built-with">
 
@@ -63,10 +72,19 @@ HTML5 and CSS in addition it used figma ui template</a>
 
 >
 
-- mobile first
+- mobile first approach
 - flex box
 - interactive button
 - CSS grid
+- CSS Animation
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p><!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> To view a live demo, click the link below.
+
+- [Live Demo Link](https://zewdu444.github.io/personal_portfolio/index.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -74,17 +92,18 @@ HTML5 and CSS in addition it used figma ui template</a>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Please just clone locally and open index.html in your browser to use it..
+> to run on your localhost just copy the whole project and open index.html in your browser.
 
 ### Prerequisites
 
-In order to run this project you need:
+In order to run this project you only need:
 
-- web-browser
+- latest web-browser
 
 ### Setup
 
-Clone this repository to your desired folder:
+> <p> git clone https://github.com/zewdu444/personal_portfolio.git </p>
+> cd personal_portfolio
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
