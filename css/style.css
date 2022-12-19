@@ -22,7 +22,7 @@ body {
 .headline {
   display: flex;
   flex-direction: column;
-  background-image: url("images/background_final_one.png");
+  background-image: url("../images/background_final_one.png");
   background-repeat: no-repeat;
   height: 718px;
   padding-top: 58px;
@@ -289,7 +289,6 @@ img {
 /* style project detail */
 
 .projectdetail {
-  font-style: regular;
   text-align: left;
   padding-top: 0;
   font-size: 15px;
@@ -361,7 +360,6 @@ img {
   margin-top: 114px;
   font-size: 40px;
   line-height: 52px;
-  font-style: bold;
   color: #172b4d;
   font-weight: 700;
   width: 200px;
@@ -495,7 +493,8 @@ footer {
   height: 770px;
   display: flex;
   flex-direction: column;
-  background: url("images/footer-layer.png") right top no-repeat;
+  background: url("../images/footer-layer.png") right top;
+  background-repeat: no-repeat;
   background-size: 75% 90%, 100%;
   background-color: #6070ff;
   background-position-y: top 21px;
@@ -504,7 +503,6 @@ footer {
 
 /* contact me style */
 .contactme {
-  font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -516,7 +514,6 @@ footer {
 
 /* contact detail style */
 .contactdetail {
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 28px;
@@ -596,7 +593,7 @@ footer {
   }
 
   .headline {
-    background-image: url("images/desktop_header_one.png");
+    background-image: url("../images/desktop_header_one.png");
     background-repeat: no-repeat;
     height: 916px;
     background-color: white;
@@ -677,7 +674,6 @@ footer {
   .title {
     font-size: 48px;
     color: #091e42;
-    font-style: bold;
     margin-bottom: 0;
     padding-bottom: 0;
   }
@@ -888,7 +884,7 @@ footer {
   .contactfooter {
     width: 100%;
     height: 900px;
-    background: url("images/desktop_footer.png") right top no-repeat;
+    background: url("../images/desktop_footer.png") right top no-repeat;
     background-size: 85% 95%, 100%;
     background-color: #6070ff;
     background-position-y: 140px;
@@ -962,6 +958,11 @@ footer {
   .contactname:nth-of-type(2) {
     display: block;
   }
+
+  /* hide mobile option */
+  .mobileoption {
+    display: none;
+  }
 }
 
 /* scaling animation */
@@ -1002,4 +1003,52 @@ footer {
   100% {
     background-color: #ebebff;
   }
+}
+
+/* mobile menu option */
+.mobileoption {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  width: 100%;
+  max-width: 375px;
+  background-color: #6070ff;
+  height: 100%;
+  margin-left: -25px;
+  margin-top: -60px;
+  opacity: 0.96;
+}
+
+.closebutton {
+  display: flex;
+  background-color: transparent;
+  border: none;
+  color: white;
+  height: 30px;
+  width: 30px;
+  margin-top: 72px;
+  margin-left: auto;
+  padding-right: 70px;
+  font-size: 32px;
+}
+
+.option {
+  list-style: none;
+}
+
+.optionlist {
+  display: flex;
+  margin-bottom: 30px;
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+}
+
+/* add hovering for link and button */
+.closebutton :hover {
+  color: #67f30a;
+}
+
+.option > li :hover {
+  color: #67f30a;
 }
