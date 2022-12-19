@@ -10,18 +10,28 @@
   <body>
     <main class="container">
       <div class="headline">
-        <header class="toolbar">
+        <header class="toolbar"  id="Portfolio">
           <nav>
           <a href="#">My Logo</a>
-            <button class="mobilemenu"><i class="fa-solid fa-bars fa-2x"></i></button>
+            <button class="mobilemenu" onclick="openOption()"><i class="fa-solid fa-bars fa-2x"></i></button>
             <ul class="desktopmenu">
-              <li><a href="#">Portoflio</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#Portfolio">Portfolio</a></li>
+              <li><a href="#About">About</a></li>
+              <li><a href="#Contact">Contact</a></li>
             </ul>
           </nav>
          
         </header>
+          <!-- mobile menu option  -->
+          <section class="mobileoption" id="mobileoption">
+            <button class="closebutton"><i class=" fa-2xl fa-solid fa-xmark"></i></button>
+            <ul class="option">
+              <li><a class="optionlist" href="#Portfolio">Portfolio</a></li>
+              <li><a class="optionlist" href="#About">About</a></li>
+              <li><a class="optionlist" href="#Contact">Contact</a></li>
+            </ul>
+
+         </section>
         <section class="content">
           <h1 class="title">I’m Zewdu <br>Glad to see you!</h1>
           <p class="detail">
@@ -177,7 +187,7 @@
 
       <!-- about me -->
 
-      <section class="aboutmyself">
+      <section class="aboutmyself" id="About">
         <section class="aboutcol1">
           <h2 class="abouttitle">About Myself</h2>
           <p class="aboutdetail">
@@ -225,7 +235,7 @@
         </section>
       </section>
       <!-- contat me form  -->
-       <footer class="contactfooter">
+       <footer class="contactfooter" id="Contact">
         <h2 class="contactme">Contact me</h2>
         <p class="contactdetail">If you have an application you are interested in developing,a feature that you need built or a project that needs coding. I’d love to help with it </p>
          <form action="https://formspree.io/f/xeqdygrp" method="post" class="footerform">

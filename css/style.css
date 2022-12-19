@@ -958,6 +958,11 @@ footer {
   .contactname:nth-of-type(2) {
     display: block;
   }
+
+  /* hide mobile option */
+  .mobileoption {
+    display: none;
+  }
 }
 
 /* scaling animation */
