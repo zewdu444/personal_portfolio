@@ -1016,7 +1016,7 @@ footer {
   height: 100%;
   margin-left: -25px;
   margin-top: -60px;
-  opacity: 0.9;
+  opacity: 0.96;
 }
 
 .closebutton {
@@ -1037,8 +1037,18 @@ footer {
 }
 
 .optionlist {
-  margin-bottom: 20px;
+  display: flex;
+  margin-bottom: 30px;
   font-size: 32px;
   color: white;
   text-decoration: none;
+}
+
+/* add hovering for link and button */
+.closebutton :hover {
+  color: #67f30a;
+}
+
+.option > li :hover {
+  color: #67f30a;
 }
