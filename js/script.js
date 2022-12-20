@@ -1,6 +1,8 @@
 const mobileoption = document.getElementById('mobileoption');
 const body = document.querySelector('body');
 const barClick = document.getElementById('barClick');
+const popupWindow =document.getElementById('popupmenu')
+const seeProject=Array.from(document.querySelectorAll('.projectbutton'))
 mobileoption.style.display = 'none';
 
 // add event listener to click barclick
@@ -19,4 +21,8 @@ window.addEventListener('resize', () => {
   if (window.innerWidth >= 768) {
     mobileoption.style.display = 'none';
   }
+});
+
+seeProject[2].addEventListener('click',()=>{
+popupWindow.style.display='block'
 });
