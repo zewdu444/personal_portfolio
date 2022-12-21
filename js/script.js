@@ -167,4 +167,96 @@ generateCard[i].getElementsByClassName('projectdetail')[0].innerHTML=projectData
     }
 });
 }
-
+// popup windows data populate
+for(let i=0; i<=3;i++){
+    seeProject[i].addEventListener('click',()=>{
+        popupWindow.style.display='block'
+        body.style.overflow = 'hidden';
+        document.getElementById('popname').innerHTML=projectData[i].desktopName;
+        while(popClient.firstChild)popClient.removeChild(popClient.firstChild);
+        projectData[i].desktopClient.forEach((item,index) =>{
+           let li=document.createElement('li');
+           let classname=['type','tech','year'];
+           li.innerHTML=item;
+            li.classList.add(classname[index])
+           popClient.appendChild(li);
+        })
+        popPicture.src=projectData[i].desktopPicture
+        popPicture.alt=projectData[i].desktopAlt
+        while(popTag.firstChild)popTag.removeChild(popTag.firstChild);
+        projectData[i].desktopTag.forEach((item) =>{
+           let li=document.createElement('li');
+           li.innerHTML=item;
+           popTag.appendChild(li);
+        })
+       popMobileDetail.style.display='none';
+      window.addEventListener('resize', () => {
+    if(window.innerWidth<768){
+        popMobileDetail.style.display='block'
+        popupWindow.style.display='block'
+        body.style.overflow = 'hidden';
+        document.getElementById('popname').innerHTML=projectData[i].mobileName;
+        while(popClient.firstChild)popClient.removeChild(popClient.firstChild);
+        projectData[i].mobileClient.forEach((item,index) =>{
+           let li=document.createElement('li');
+           let classname=['type','tech','year'];
+           li.innerHTML=item;
+            li.classList.add(classname[index])
+           popClient.appendChild(li);
+        })
+        popPicture.src=projectData[i].mobilePicture
+        popPicture.alt=projectData[i].mobileAlt
+        while(popTag.firstChild)popTag.removeChild(popTag.firstChild);
+        projectData[i].mobileTag.forEach((item) =>{
+           let li=document.createElement('li');
+           li.innerHTML=item;
+           popTag.appendChild(li);
+        })
+     }
+     else{
+        popupWindow.style.display='block'
+        body.style.overflow = 'hidden';
+        document.getElementById('popname').innerHTML=projectData[i].desktopName;
+        while(popClient.firstChild)popClient.removeChild(popClient.firstChild);
+        projectData[i].desktopClient.forEach((item,index) =>{
+           let li=document.createElement('li');
+           let classname=['type','tech','year'];
+           li.innerHTML=item;
+            li.classList.add(classname[index])
+           popClient.appendChild(li);
+        })
+        popPicture.src=projectData[i].desktopPicture
+        popPicture.alt=projectData[i].desktopAlt
+        while(popTag.firstChild)popTag.removeChild(popTag.firstChild);
+        projectData[i].desktopTag.forEach((item) =>{
+           let li=document.createElement('li');
+           li.innerHTML=item;
+           popTag.appendChild(li);
+        })
+       popMobileDetail.style.display='none';
+     }
+})
+if(window.innerWidth<768){
+     popMobileDetail.style.display='block'
+    popupWindow.style.display='block'
+    body.style.overflow = 'hidden';
+    document.getElementById('popname').innerHTML=projectData[i].mobileName;
+    while(popClient.firstChild)popClient.removeChild(popClient.firstChild);
+    projectData[i].mobileClient.forEach((item,index) =>{
+       let li=document.createElement('li');
+       let classname=['type','tech','year'];
+       li.innerHTML=item;
+        li.classList.add(classname[index])
+       popClient.appendChild(li);
+    })
+    popPicture.src=projectData[i].mobilePicture
+    popPicture.alt=projectData[i].mobileAlt
+    while(popTag.firstChild)popTag.removeChild(popTag.firstChild);
+    projectData[i].mobileTag.forEach((item) =>{
+       let li=document.createElement('li');
+       li.innerHTML=item;
+       popTag.appendChild(li);
+    })
+ }
+})
+}
