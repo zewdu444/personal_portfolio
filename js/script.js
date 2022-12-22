@@ -11,6 +11,7 @@ const worksCard = document.querySelector('.workscard');
 const popName = document.getElementById('popname');
 const seeLive = document.getElementById('seelive');
 const seeSource = document.getElementById('seesource');
+const inputName = document.getElementById('inputname');
 mobileoption.style.display = 'none';
 const projectData = [
   {
@@ -108,8 +109,14 @@ window.addEventListener('resize', () => {
   if (window.innerWidth >= 768) {
     mobileoption.style.display = 'none';
     body.style.overflow = 'auto';
+    inputName.placeholder = 'Alexandra Loremipsum';
+  } else {
+    inputName.placeholder = 'Alexandra';
   }
 });
+if (window.innerWidth < 768) {
+  inputName.placeholder = 'Alexandra';
+}
 // close button on popup menu;
 function closePopupMenu() {
   popupWindow.style.display = 'none';
@@ -284,7 +291,7 @@ for (let i = 0; i <= 3; i += 1) {
 // form validation starting here.
 const email = document.getElementById('email');
 const errorMessage = document.getElementById('errormessage');
-const submitButton = document.getElementById('submit');
+const form = document.getElementById('form');
 
 // check email validation  of  lower cases
 const emailValidation = (input) => {
@@ -294,15 +301,12 @@ const emailValidation = (input) => {
   return false;
 };
 // check email address and submit form
-function submitForm() {
+form.addEventListener('submit', (event) => {
   errorMessage.innerHTML = '';
-  submitButton.addEventListener('click', (event) => {
-    if (emailValidation(email.value)) {
-      errorMessage.innerHTML = '';
-    } else {
-      event.preventDefault();
-      errorMessage.innerHTML = 'please change your email address to lower case';
-    }
-  });
-}
-submitForm();
+  if (emailValidation(email.value)) {
+    errorMessage.innerHTML = '';
+  } else {
+    event.preventDefault();
+    errorMessage.innerHTML = 'please change your email address to lower case';
+  }
+});
