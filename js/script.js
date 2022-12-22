@@ -294,3 +294,15 @@ const emailValidation = (input) => {
   return false;
 };
 // check email address and submit form
+function submitForm() {
+  errorMessage.innerHTML = '';
+  submitButton.addEventListener('click', (event) => {
+    if (emailValidation(email.value)) {
+      errorMessage.innerHTML = '';
+    } else {
+      event.preventDefault();
+      errorMessage.innerHTML = 'please change your email address to lower case';
+    }
+  });
+}
+submitForm(); 
