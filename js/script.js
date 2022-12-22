@@ -281,3 +281,29 @@ for (let i = 0; i <= 3; i += 1) {
     }
   });
 }
+// form validation starting here.
+const email = document.getElementById('email');
+const errorMessage = document.getElementById('errormessage');
+const submitButton = document.getElementById('submit');
+
+// check email validation  of  lower cases
+const emailValidation = (input) => {
+  if (input === input.toLowerCase()) {
+    return true;
+  }
+  return false;
+};
+// check email address and submit form
+function submitForm() {
+  errorMessage.innerHTML = '';
+  submitButton.addEventListener('click', (event) => {
+    if (emailValidation(email.value)) {
+      errorMessage.innerHTML = '';
+    } else {
+      event.preventDefault();
+      errorMessage.innerHTML = 'please change your email address to lower case';
+    }
+  });
+}
+
+submitForm();

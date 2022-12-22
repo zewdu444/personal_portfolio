@@ -544,7 +544,7 @@ footer {
   border: 1px solid #cfd8dc;
   padding-left: 10px;
   padding-top: 10px;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 /* contact submit style */
@@ -1215,4 +1215,10 @@ footer {
 
 .popbutton:active {
   color: #ef1065;
+}
+
+.errormessasge {
+  color: rgb(133, 15, 15);
+  padding-top: 4px;
+  font-size: 15px;
 }
