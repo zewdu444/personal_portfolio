@@ -193,22 +193,15 @@
           action="https://formspree.io/f/xeqdygrp"
           method="post"
           class="footerform"
+          id="form"
+          onsubmit="return submitForm()"
         >
           <fieldset class="formgroup">
             <input
               class="contactname"
-              name="name"
+              name="fullname"
               type="text"
-              id="name"
-              placeholder="Yeremias"
-              maxlength="30"
-              required
-            />
-            <input
-              class="contactname"
-              name="name"
-              type="text"
-              id="name"
+              id="inputname"
               placeholder="Alexandra Loremipsum"
               maxlength="30"
               required
@@ -221,6 +214,7 @@
               placeholder="natajayanj14@gmail.com"
               required
             />
+            <small class="errormessasge" id="errormessage"></small>
             <textarea
               class="contactmessage"
               name="message"
@@ -231,7 +225,12 @@
               placeholder="Write your message here"
               required
             ></textarea>
-            <input class="contactsubmit" type="submit" value="Get In Touch" />
+            <input
+              id="submit"
+              class="contactsubmit"
+              type="submit"
+              value="Get In Touch"
+            />
           </fieldset>
         </form>
       </footer>

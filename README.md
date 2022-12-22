@@ -84,6 +84,7 @@ HTML5 and CSS in addition it used figma ui template</a>
 - CSS Animation
 - Javascript menu option
 - Popup windows for mobile and desktop page
+- Form Validation
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p><!-- LIVE DEMO -->
 
@@ -149,7 +150,7 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Form validation
+> Preserve data in the browser
 
 ## 🤝 Contributing <a name="contributing"></a>
 

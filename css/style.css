@@ -130,11 +130,6 @@ ul.techstack > li {
   display: none;
 }
 
-/* hide contact name  */
-.contactname:nth-of-type(2) {
-  display: none;
-}
-
 /* content section */
 .content {
   display: flex;
@@ -544,7 +539,7 @@ footer {
   border: 1px solid #cfd8dc;
   padding-left: 10px;
   padding-top: 10px;
-  margin-top: 25px;
+  margin-top: 15px;
 }
 
 /* contact submit style */
@@ -921,10 +916,6 @@ footer {
     align-self: center;
   }
 
-  .contactname:nth-of-type(1) {
-    display: none;
-  }
-
   /* switching elments  which are  in mobile view  display none */
   .workscard:nth-of-type(n + 2) > section > ul.client > li.type:nth-of-type(2) {
     display: block;
@@ -952,11 +943,6 @@ footer {
 
   /* hide desktop year for card four */
   .workscard:nth-of-type(4) > section > ul.client > li:nth-of-type(6) {
-    display: block;
-  }
-
-  /* hide contact name  */
-  .contactname:nth-of-type(2) {
     display: block;
   }
 
@@ -1215,4 +1201,10 @@ footer {
 
 .popbutton:active {
   color: #ef1065;
+}
+
+.errormessasge {
+  color: #850f0f;
+  padding-top: 4px;
+  font-size: 15px;
 }
