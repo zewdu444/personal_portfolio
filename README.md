@@ -41,7 +41,12 @@ After you're finished please remove all the comments and instructions!
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
 - [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
@@ -64,7 +69,7 @@ HTML5 and CSS in addition it used figma ui template</a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> HTML 5 , CSS flex box and CSS grid.
+> HTML 5 , CSS flex box and CSS grid and javascript for dynamic loading contents
 
 <!-- Features -->
 
@@ -77,6 +82,8 @@ HTML5 and CSS in addition it used figma ui template</a>
 - interactive button
 - CSS grid
 - CSS Animation
+- Javascript menu option
+- Popup windows for mobile and desktop page
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p><!-- LIVE DEMO -->
 
@@ -94,18 +101,30 @@ HTML5 and CSS in addition it used figma ui template</a>
 
 > to run on your localhost just copy the whole project and open index.html in your browser.
 
-### Prerequisites
-
-In order to run this project you only need:
-
-- latest web-browser
-
 ### Setup
 
 > <p> git clone https://github.com/zewdu444/personal_portfolio.git </p>
 > cd personal_portfolio
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Prerequisites
+
+In order to run this project you only need:
+
+- latest web-browser
+
+### Install
+
+To install this project in your local machine use
+
+> npm i
+
+### Usage
+
+To run the project, execute the following command:
+
+> In visual studio code you can use Go live server or simply you can open index.html in browser
 
 <!-- AUTHORS -->
 
@@ -116,6 +135,36 @@ In order to run this project you only need:
 - GitHub: [@zewdu444](https://github.com/zewdu444)
 - Twitter: [@zewdu444](https://twitter.com/zewdu444)
 - LinkedIn: [zewdu-erkyhun](https://www.linkedin.com/in/zewdu-erkyhun-081378b3/)
+
+👤 **Adarsh Pathak**
+
+- GitHub: [@PowerLevel9000](https://github.com/PowerLevel9000)
+- Twitter: [@PowerLevel9002](https://twitter.com/PowerLevel9002?t=AIuSN7mTxk5a_MWpLolEjA&s=09)
+- LinkedIn: [Adarsh Pathak](https://www.linkedin.com/in/adarsh-pathak-56a831256/)
+
+👤 **Usama Masood**
+
+- GitHub: [@UsamaMasood12](https://github.com/UsamaMasood12)
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+> Form validation
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/zewdu444/personal_portfolio/issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+> If you like the project please give it star
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
 
