@@ -6,8 +6,11 @@ const popClient = document.getElementById('popclient');
 const popPicture = document.getElementById('poppicture');
 const popTag = document.getElementById('poptag');
 const popMobileDetail = document.getElementById('popmobiledetail');
+const popDesktopDetail = document.getElementById('popdesktopdetail');
 const worksCard = document.querySelector('.workscard');
 const popName = document.getElementById('popname');
+const seeLive = document.getElementById('seelive');
+const seeSource = document.getElementById('seesource');
 mobileoption.style.display = 'none';
 const projectData = [
   {
@@ -24,6 +27,10 @@ const projectData = [
     desktopdetail: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
     mobiledetail: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
     desktopmainTag: ['html', 'css', 'javascript'],
+    popmobiledetail: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s  when an unknown printer took a galley of type and scrambled it to make a type specimen book. It hassurvived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    popdesktopdetail: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    seelive: 'See live',
+    seesource: 'See Source',
   },
   {
     desktopName: 'Multi-Post Stories',
@@ -39,6 +46,10 @@ const projectData = [
     desktopdetail: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     mobiledetail: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     desktopmainTag: ['html', 'Ruby on Rails', 'css', 'javascript'],
+    popmobiledetail: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s  when an unknown printer took a galley of type and scrambled it to make a type specimen book. It hassurvived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    popdesktopdetail: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    seelive: 'See live',
+    seesource: 'See Source',
   },
 
   {
@@ -55,6 +66,10 @@ const projectData = [
     desktopdetail: 'Exploring the future of media in Facebooks first Virtual Reality app a place to discover and enjoy 360 photos and videos on Gear VR..',
     mobiledetail: 'A daily selection of privately personalized reads; no accounts or sign-ups required',
     desktopmainTag: ['html', 'Ruby on Rails', 'css', 'javascript'],
+    popmobiledetail: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s  when an unknown printer took a galley of type and scrambled it to make a type specimen book. It hassurvived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    popdesktopdetail: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    seelive: 'See live',
+    seesource: 'See Source',
   },
   {
     desktopName: 'Uber Navigation',
@@ -70,6 +85,10 @@ const projectData = [
     desktopdetail: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     mobiledetail: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     desktopmainTag: ['html', 'Ruby on Rails', 'css', 'javascript'],
+    popmobiledetail: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s  when an unknown printer took a galley of type and scrambled it to make a type specimen book. It hassurvived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    popdesktopdetail: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.',
+    seelive: 'See live',
+    seesource: 'See Source',
   },
 ];
 
@@ -175,6 +194,9 @@ for (let i = 0; i <= 3; i += 1) {
       li.classList.add(classname[index]);
       popClient.appendChild(li);
     });
+    popDesktopDetail.innerHTML = projectData[i].popdesktopdetail;
+    seeLive.innerHTML = `${projectData[i].seelive} <i class="fa-solid fa-up-right-from-square"></i>`;
+    seeSource.innerHTML = `${projectData[i].seesource} <i class="fa-brands fa-github"></i>`;
     popPicture.src = projectData[i].desktopPicture;
     popPicture.alt = projectData[i].desktopAlt;
     while (popTag.firstChild)popTag.removeChild(popTag.firstChild);
@@ -200,6 +222,7 @@ for (let i = 0; i <= 3; i += 1) {
           li.classList.add(classname[index]);
           popClient.appendChild(li);
         });
+        popMobileDetail.innerHTML = projectData[i].popmobiledetail;
         popPicture.src = projectData[i].mobilePicture;
         popPicture.alt = projectData[i].mobileAlt;
         while (popTag.firstChild)popTag.removeChild(popTag.firstChild);
